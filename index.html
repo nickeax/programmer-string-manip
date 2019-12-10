@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PTM</title>
+	<link href="https://fonts.googleapis.com/css?family=Calistoga|Quicksand:300,400,500,700|Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+
+			<nav class="navbar navbar-standard text-left ml-4">
+				<h3>Programmer's Text Manipulator</h3>
+				<h4><a href="https://instructionword.com">↹instructionWO☈D</a> |
+					<a href="https://instructionword.com/track-iss">ISS Tracker</a> |
+					<a href="https://instructionword.com/bat">Binary Adder Tutorial</a></h4>
+
+			</nav>
+		</div>
+	</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<form>
+						<div class="[ form-group ]">
+							<input type="text" id="surrounderOpen" placeholder="open string/char">
+							<input type="text" size="2" value=", " name="delimeter" id="delimeter">
+							<input type="text" id="surrounderClose" placeholder="close string/char">
+							<input type="text" id="filter" placeholder="filter">
+
+
+							<input type="checkbox" name="format" id="format" autocomplete="off" />
+							<div class="[ btn-group ]">
+								<label for="format" class="[ btn btn-success ]">
+									<span class="[ glyphicon glyphicon-ok ]"></span>
+									<span> </span>
+								</label>
+								<label for="format" class="[ btn btn-default active ]">
+									preserve newlines
+								</label>
+							</div>
+
+							<input type="checkbox" name="uppercase" id="uppercase" autocomplete="off" />
+							<div class="[ btn-group ]">
+								<label for="uppercase" class="[ btn btn-success ]">
+									<span class="[ glyphicon glyphicon-ok ]"></span>
+									<span> </span>
+								</label>
+								<label for="uppercase" class="[ btn btn-default active ]">
+									uppercase
+								</label>
+							</div>
+
+
+
+							<input type="checkbox" name="capitalise" id="capitalise" autocomplete="off" />
+							<div class="[ btn-group ]">
+								<label for="capitalise" class="[ btn btn-success ]">
+									<span class="[ glyphicon glyphicon-ok ]"></span>
+									<span> </span>
+								</label>
+								<label for="capitalise" class="[ btn btn-default active ]">
+									capitalise
+								</label>
+							</div>
+							<span class="clearButton" id="clearButton">CLEAR</span>
+						</div>
+
+						<textarea class="form-control" id="input" cols="80" rows="10"
+							placeholder="Text placed here will be surrounded by the characters you enter for 'open string/char' and 'close string/char'. You can also enter a character or string to place between each word and a filter, to remove each occurance of a string."></textarea>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-info">
+					<div class="panel-heading">Processed Output <span id="clipboard" class="copyButton">copy to clipboard</span>
+					</div>
+					<div class="panel-body" id="output"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+
+</body>
+
+</html>
